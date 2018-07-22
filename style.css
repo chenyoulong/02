@@ -1,300 +1,44 @@
+body{
+  background: #ebebeb;
+}
+.nav{
+  width:560px;
+  height: 50px;
+  font:bold 0/50px Arial;
+  text-align:center;
+  margin:40px auto 0;
+    background: #a09e9e;
+  /*制作圆*/
 
-#site-nav {
-    height: 32px;
-    font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
-  }
-  #sn-bd {
-    position: relative;
-    left: -15px;
-  }
-  .sn-container,
-.menu-hd {
-    height: 32px;
-  }
-   .sn-login-info,
-   .sn-quick-menu,
-.sn-miao-message,
-   .sn-welcome-info,
-  .sn-welcome-info span,
-   .sn-user-nick,
- .sn-point {
-    height: 32px;
-    line-height: 32px;
-  }
-   .menu-bd {
-    top: 33px;
-  }
-  .sn-seller {
-    display: block;
-  }
-   .sn-mobile {
-    display: block;
-  }
- .sn-quick-menu .sn-separator {
-    top: 9;
-  }
-   .sn-quick-menu .menu-hd b,
-   .sn-all-msg b {
-    top: 15px;
-  }
-  a.sn-identity {
-    top: 9px;
-  }
-.sn-identity span {
-    line-height: 11px;
-  }
- .sn-msg-box {
-    z-index: 195000;
-  }
-  #sn-bd,
-  .headerLayout,
-  .full-banner {
-    width: 1230px;
-  }
-  #site-nav .sn-sitemap .menu-bd {
-    width: 1198px;
-  }
-  #site-nav .site-market {
-    width: 375px;
-  }
-  #site-nav .site-brand {
-    width: 270px;
-  }
-  .img-ks-lazyload {
-    -webkit-animation: none!important;
-    animation: none!important;
-  }
-  #footer {
-    font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
-  }
-  @media (max-width: 1260px) {
-    .full-banner {
-      width: 100%;
-    }
-    .full-banner img {
-      margin-left: -313.5px;
-    }
-    #header #mallSearch {
-      width: 410px;
-    }
-    #header #mallSearch #mq {
-      width: 276px;
-    }
-    #header .header-banner {
-      padding: 10px 0 0 80px;
-    }
-   
-    .headerLayout,
-    .full-banner {
-      width: 982px;
-    }
-     .sn-sitemap .menu-bd {
-      width: 982px;
-    }
-    #sn-bd {
-      left: 0;
-    }
-  }
-  .w1024 .full-banner {
-    width: 100%;
-  }
-  .w1024 .full-banner img {
-    margin-left: -313.5px;
-  }
-  .w1024 #header #mallSearch {
-    width: 410px;
-  }
-  .w1024 #header #mallSearch #mq {
-    width: 276px;
-  }
-  .w1024 #header .header-banner {
-    padding: 10px 0 0 80px;
-  }
-  .w1024 #sn-bd,
-  .w1024 .headerLayout,
-  .w1024 .full-banner {
-    width: 982px;
-  }
-  .w1024 #site-nav .sn-sitemap .menu-bd {
-    width: 982px;
-  }
-  .w1024 #site-nav #sn-bd {
-    left: 0;
-  }
-  .sn-back-home {
-    display: none;
-  }
-  .top-con {
-    width: 100%;
-    display: none;
-  }
-  .top-con img {
-    display: block;
-    margin: 0 auto;
-  }
-  .top-con .close {
-    position: absolute;
-    left: 0;
-    display: block;
-    top: 0;
-  }
-  .top-marquee-con {
-    background-color: #431313;
-  }
-  .top-marquee-con .module-body {
-    height: 36px;
-    width: 1230px;
-    margin: 0 auto;
-    padding-right: 30px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    color: #fff;
-  }
-  .top-marquee-con .module-body .marquee {
-    height: 36px;
-    overflow: hidden;
-  }
-  .top-marquee-con .slide-item {
-    height: 36px;
-    padding: 0;
-    margin: 0;
-  }
-  .top-marquee-con .slide-item > li {
-    width: 33.33%;
-    height: 18px;
-    line-height: 16px;
-    position: relative;
-    overflow: hidden;
-    float: left;
-  }
-  .top-marquee-con .slide-item > li a {
-    color: #fff;
-  }
-  .top-marquee-con .slide-item > li .title {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-right: 135px;
-  }
-  .top-marquee-con .slide-item > li .price {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 130px;
-    position: absolute;
-    top: 0;
-    right: 5px;
-  }
-  .top-marquee-con .slide-item > li .price > span {
-    color: #ff0;
+      /*制作导航立体风格*/
+      
+}
+.nav a{
+  display: inline-block;
+ 
+  transition: all 0.2s ease-in;
+ 
+}
+.nav a:hover{
   
-  width: 832px;
-  margin-left: -416px;
+  transform:rotate(10deg);
+
 }
-.w1024 .vvip-incoming .modal-content.video {
-  height: 527px;
-  margin-top: -278.5px;
+
+.nav li{
+  position:relative;
+  display:inline-block;
+  padding:0 16px;
+  font-size: 13px;
+  text-shadow:1px 2px 4px rgba(0,0,0,.5);
+  list-style: none outside none;
 }
-.w1024 .vvip-incoming .modal-content.video:hover {
-  height: 557px;
-}
-.w1024 .vvip-incoming .modal-content.image {
-  height: 468px;
-  margin-top: -234px;
-}
-.w1024 .vvip-incoming .modal-content .brand-logo-ctn {
-  width: 832px;
-  height: 61px;
-}
-.w1024 .vvip-incoming .modal-content .brand-logo-ctn .brand-logo {
-  max-width: 122px;
-  max-height: 61px;
-}
-.w1024 .vvip-incoming .modal-content .brand-logo-ctn .slogan-ctn .title-main {
-  font-size: 32px;
-}
-.w1024 .vvip-incoming .modal-content .brand-logo-ctn .slogan-ctn .title-sub {
-  font-size: 19px;
-}
-.w1024 .vvip-incoming .modal-content:hover .action-img,
-.w1024 .vvip-incoming .modal-content .action-img.show {
-  opacity: 1;
-  height: 50px;
-  top: 468px;
-  transition: opacity 300ms linear;
-  margin-left: 31px;
-}
-.w1024 .vvip-incoming .modal-content #tb_player {
-  margin-top: 28px;
-  margin-left: 31px;
-  width: 770px;
-  height: 468px;
-}
-.vvip-incoming.h800 .modal-close {
-  width: 62px;
-  height: 26px;
-  font-size: 16px;
-  line-height: 26px;
-}
-.vvip-incoming.h800 .modal-content {
-  width: 832px;
-  margin-left: -416px;
-}
-.vvip-incoming.h800 .modal-content.video {
-  height: 527px;
-  margin-top: -278.5px;
-}
-.vvip-incoming.h800 .modal-content.video:hover {
-  height: 557px;
-}
-.vvip-incoming.h800 .modal-content.image {
-  height: 468px;
-  margin-top: -234px;
-}
-.vvip-incoming.h800 .modal-content .brand-logo-ctn {
-  width: 832px;
-  height: 61px;
-}
-.vvip-incoming.h800 .modal-content .brand-logo-ctn .brand-logo {
-  max-width: 122px;
-  max-height: 61px;
-}
-.vvip-incoming.h800 .modal-content .brand-logo-ctn .slogan-ctn .title-main {
-  font-size: 32px;
-}
-.vvip-incoming.h800 .modal-content .brand-logo-ctn .slogan-ctn .title-sub {
-  font-size: 19px;
-}
-.vvip-incoming.h800 .modal-content:hover .action-img,
-.vvip-incoming.h800 .modal-content .action-img.show {
-  opacity: 1;
-  height: 50px;
-  top: 468px;
-  transition: opacity 300ms linear;
-  margin-left: 31px;
-}
-.vvip-incoming.h800 .modal-content #tb_player {
-  margin-top: 28px;
-  margin-left: 31px;
-  width: 770px;
-  height: 468px;
-}
-.j_newUserGiftLink {
-  display: block;
-  margin: auto;
-  padding-top: 20px;
-}
-.j_newGiftImg {
-  padding-right: 30px;
-  display: block;
-  margin: auto;
-  width: 1230px;
-  height: 260px;
-}
-.w1024 .j_newGiftImg {
-  padding-left: 30px;
-  display: block;
-  margin: auto;
-  width: 982px;
-  height: 208px;
+/*使用伪元素制作导航列表项分隔线*/
+
+    /*删除第一项和最后一项导航分隔线*/
+
+.nav a,
+.nav a:hover{
+  color:#fff;
+  text-decoration: none;
 }
